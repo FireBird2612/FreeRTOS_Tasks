@@ -13,4 +13,4 @@ This system consists of three main FreeRTOS tasks: sw_press, led_control, and lc
 
 
 # Results:
- ![SW2 is Pressed](/Users/simpleyetfulling/Downloads/SW2.jpg)
+ ![SW2 is Pressed](EMotoRad_A/Docs/SW2.jpg)
