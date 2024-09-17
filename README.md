@@ -11,6 +11,45 @@ This system consists of three main FreeRTOS tasks: sw_press, led_control, and lc
 5. If no switch is pressed, the led will start blinking one by one until any switch press is detected.
 6. The LED status and the switch press will be update on the LCD at all times.
 
+# Platform:
 
+1. IDE: STM32CubeIDE
+2. Development Board: NUCLEO-F446RE
+3. Libraries: HAL
+4. RTOS: FreeRTOS
+5. Driver: 16x2 LCD (based on PCF8574 I2C Protocol)
+
+# Documentation:
+
+1. Refer here for the documentation of the FreeRTOS tasks: [tasks_explanation](/Docs/tasks_explanation.md)
+
+# References:
+1. [FreeRTOS](https://freertos.org/)
+2. [PCF8574 I2C Expander](https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf)
+3. [16x2 LCD Datasheet](https://www.sparkfun.com/datasheets/LCD/HD44780.pdf)
+4. [STM32F446RE Datasheet](https://www.st.com/resource/en/datasheet/stm32f446re.pdf)
+5. [NUCLEO - F446RE User Manual](https://www.st.com/resource/en/user_manual/um1724-stm32-nucleo64-boards-mb1136-stmicroelectronics.pdf)
+6. [STM32F446RE Reference Manual](https://www.st.com/resource/en/reference_manual/rm0390-stm32f446xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf)
+7. [NUCLEO - F446RE Schematic Diagram](https://www.st.com/resource/en/schematic_pack/mb1136-default-c03_schematic.pdf)
+8. [SEGGER](https://www.segger.com/downloads/systemview/)
 # Results:
- ![SW2 is Pressed](EMotoRad_A/Docs/SW2.jpg)
+
+#### SW2 Pressed!
+![SW2 is Pressed](Docs/SW2.jpg)
+___
+
+#### SW1 Pressed!
+![SW1 is Pressed](Docs/SW1.jpg)
+___
+
+#### SW1 and SW2 Pressed!
+![SW1_SW2 is Pressed](Docs/SW1_SW2.jpg)
+___
+
+#### SW1 and SW2 Pressed!
+![No switch is pressed](Docs/No_SW.jpg)
+___
+
+#### SW1 and SW2 Pressed!
+![No switch is pressed](Docs/No_SW_RH.jpg)
+___
