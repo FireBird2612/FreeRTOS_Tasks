@@ -6,6 +6,7 @@
 
 #define CORTEX_M4			1UL
 
+// Slave address
 #define LCD_ADDR			0x4E
 
 // This includes the 3 bit (backlight) which is always 1

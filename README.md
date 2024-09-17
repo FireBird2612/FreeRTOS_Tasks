@@ -32,7 +32,11 @@ This system consists of three main FreeRTOS tasks: sw_press, led_control, and lc
 6. [STM32F446RE Reference Manual](https://www.st.com/resource/en/reference_manual/rm0390-stm32f446xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf)
 7. [NUCLEO - F446RE Schematic Diagram](https://www.st.com/resource/en/schematic_pack/mb1136-default-c03_schematic.pdf)
 8. [SEGGER](https://www.segger.com/downloads/systemview/)
+
 # Results:
+
+## Video:
+[Google drive link to the video](https://drive.google.com/file/d/1i_nlPog18NK3AtiKFvXKpyPOTRRp7A2Q/view?usp=share_link)
 
 #### SW2 Pressed!
 ![SW2 is Pressed](Docs/SW2.jpg)

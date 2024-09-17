@@ -320,7 +320,7 @@ static void sw_press(void *param){
 		sw1_curr_press = HAL_GPIO_ReadPin(SW1_GPIO_Port, SW1_Pin);			// If pressed, state = 0!
 		sw2_curr_press = HAL_GPIO_ReadPin(SW2_GPIO_Port, SW2_Pin);
 
-		/*	Check if both switch pressed, sw1 pressed only, sw2 pressed only, no switch pressed1	*/
+		/*	Check if both switch pressed, sw1 pressed only, sw2 pressed only	*/
 		if((sw1_curr_press == GPIO_PIN_RESET && sw1_prev_press == GPIO_PIN_SET) && (sw2_curr_press == GPIO_PIN_RESET && sw2_prev_press == GPIO_PIN_SET)){
 			xTaskNotify(led_control_handle, BOTH_SW_PRESSED, eSetValueWithOverwrite);
 		}
@@ -330,9 +330,7 @@ static void sw_press(void *param){
 		else if((sw1_curr_press == GPIO_PIN_SET && sw1_prev_press == GPIO_PIN_SET) && (sw2_curr_press == GPIO_PIN_RESET && sw2_prev_press == GPIO_PIN_SET)){
 			xTaskNotify(led_control_handle, SW2_PRESSED, eSetValueWithOverwrite);
 		}
-		//else{
-		//	xTaskNotify(led_control_handle, NO_SW_PRESSED, eSetValueWithOverwrite);
-		//}
+
 		sw1_prev_press = sw1_curr_press;
 		sw2_prev_press = sw2_curr_press;
 
